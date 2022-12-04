@@ -75,6 +75,21 @@
    > "build": "tsup src/index.ts --format esm, cjs --dts --external react",
    > "dev": "tsup src/index.ts --format esm, cjs --dts --watch --external react",
 
+
+### Setup Stitches tool
+- Nice tool to work with CSS in JS
+- Framework agnostic
+- Fully-typed API to bes DX
+- Avoids unnecessary prop interpolation at runtime, improves performance
+
+1. Install
+   > npm i @stitches/react
+
+2. Usage
+   - Create a styles/index.ts file in react package
+   - import createStitches and create a theme with all tokens variations
+   - Note that the tokes names are the same as the Stitches, to make it easy to map
+   - Also extend the themeDefault to add the same logic the tokes 'spaces' to height and width props
 ### Todo Components
 
 - [] Text
