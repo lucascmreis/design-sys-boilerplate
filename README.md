@@ -90,6 +90,23 @@
    - import createStitches and create a theme with all tokens variations
    - Note that the tokes names are the same as the Stitches, to make it easy to map
    - Also extend the themeDefault to add the same logic the tokes 'spaces' to height and width props
+
+### Setup Storybooks
+- Manipulate, test and check components 
+ 
+ 1. Create a new package 'docs' to implement the sb
+ 2. Run command to install
+   > npx sb init --builder @storybook/builder-vite --type react --use-npm
+
+3. If you got some error for npm version, we can set as NO to create new migrations
+4. It is necessary to add some new dependencies
+   > npm i vite @vitejs/plugin-react -D
+   > npm i react react-dom
+
+5. In vite configuration file 'vite.config.js' create some customizations
+   - Add /// <reference types="vite/client" /> -> It helps typescript import some global types from vite
+
+> Because of cache on vite, it can throw some errors in vite install inside monorepo. Recommended to remove all node_modules and install again from root 
 ### Todo Components
 
 - [] Text
