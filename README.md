@@ -91,7 +91,7 @@
    - Note that the tokes names are the same as the Stitches, to make it easy to map
    - Also extend the themeDefault to add the same logic the tokes 'spaces' to height and width props
 
-### Setup Storybooks
+### Setup Storybook
 - Manipulate, test and check components 
  
  1. Create a new package 'docs' to implement the sb
@@ -107,6 +107,18 @@
    - Add /// <reference types="vite/client" /> -> It helps typescript import some global types from vite
 
 > Because of cache on vite, it can throw some errors in vite install inside monorepo. Recommended to remove all node_modules and install again from root 
+
+6. Add the tokens, react and eslint-config packages in docs dependencies.
+> If you change the folder where your stories are located, you should adjust in storybook/main.js the path in module.exports 
+
+7. To customize the theme of storybook
+   - Create a file in .storybook folder the manager.js file
+   - import addons and themes plugin
+   - addons.setConfig({ theme: themes.dark})
+
+8. Set an external font in storybook
+   - copy the embedded code html
+   - past in file preview-head.html in .storybook folder
 ### Todo Components
 
 - [] Text

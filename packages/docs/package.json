@@ -26,6 +26,9 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@lr-ui/react": "*",
+    "@lr-ui/tokens": "*",
+    "@lr-ui/eslint-config": "*"
   }
 }
