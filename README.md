@@ -119,6 +119,10 @@
 8. Set an external font in storybook
    - copy the embedded code html
    - past in file preview-head.html in .storybook folder
+
+
+### Documentation of tokens
+- We can create docs in storybook with .tsx or .mdx
 ### Todo Components
 
 - [] Text
