@@ -3,16 +3,20 @@
   "version": "1.0.0",
   "description": "- Split in packages",
   "main": "index.js",
-  "private": "true",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
   "dependencies": {
     "typescript": "^4.9.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "turbo": "^1.6.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build"
   },
   "keywords": [],
   "author": "",

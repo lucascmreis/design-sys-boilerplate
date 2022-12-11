@@ -123,6 +123,22 @@
 
 ### Documentation of tokens
 - We can create docs in storybook with .tsx or .mdx
+
+### Turborepo
+- Great support to work with monorepo
+- Run scripts for all packages at same time
+- Run build in parallel and speed up
+- It saves a local cache to incremental build
+
+- Configure git and gitignore
+- install as DevDependencies
+  >  npm i turbo@latest -D
+
+- Create a turbo.json file
+- Define a predefined schema : https://turborepo.org/schema.json
+- Create pipelines to run dev and build
+- Adjust in package.json file a script to run with turbo script in parallel
+- Create in package.json file a script to build
 ### Todo Components
 
 - [] Text
